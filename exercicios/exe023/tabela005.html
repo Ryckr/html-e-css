@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        .cnome{
+            background-color: chartreuse;
+        }
+        
+        .colgrup{
+            background-color: darkorange;
+        }
+        .cprof{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exerccio de Tabela</h1>
+    <table>
+        <colgroup>
+          <col class="cnome" >
+          <col class="colgrup" span="2" >  
+          <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>João da Silva</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Maria de Souza</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Carlos Pereira</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Juliana Santos</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Paulo Roberto</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Luciana Oliveira</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
