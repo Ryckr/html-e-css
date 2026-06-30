@@ -20,14 +20,40 @@ header{
     background-color: #DE6B48;
     color: #071013;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow: 1px 2px 0px rgba(173, 216, 230, 0.568);
 }
 
-nav{
-    border: 1px dotted black;
+header > nav{
+    /*border: 1px dotted black;*/
+     
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a{
+    background-color: #F2E3D5;
+    color: #071013;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header > nav > a:hover{
+    background-color : #d8b08b;
+    transition: 0.5s;
 }
 
 main{
@@ -37,3 +63,4 @@ main{
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
 }
+
